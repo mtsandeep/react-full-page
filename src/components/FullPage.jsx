@@ -89,9 +89,11 @@ export default class FullPage extends React.Component {
 
   onResize = () => {
     this.updateSlides();
-    this.setState({
-      height: window.innerHeight,
-    });
+    if(!this.state.height || this.props.scrollMode === scrollMode.FULL_PAGE) {
+      this.setState({
+        height: window.innerHeight,
+      });
+    }
   }
 
   onTouchStart = (evt) => {

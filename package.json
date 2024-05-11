@@ -1,6 +1,6 @@
 {
-  "name": "react-full-page",
-  "version": "0.1.12",
+  "name": "react-full-page-v2",
+  "version": "0.1.13",
   "description": "Full page scrolling with React",
   "main": "./lib",
   "directories": {
@@ -10,18 +10,18 @@
     "start": "webpack-dev-server",
     "test": "eslint src/**/*.jsx && eslint src/**/*.js",
     "build": "webpack -p",
-    "prepublish": "./node_modules/.bin/babel ./src --out-dir ./lib"
+    "prepublish": "npx babel ./src --out-dir ./lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zwug/react-full-page.git"
+    "url": "git+https://github.com/mtsandeep/react-full-page.git"
   },
   "author": "Kirill Mironov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zwug/react-full-page/issues"
+    "url": "https://github.com/mtsandeep/react-full-page/issues"
   },
-  "homepage": "https://github.com/zwug/react-full-page#readme",
+  "homepage": "https://github.com/mtsandeep/react-full-page#readme",
   "devDependencies": {
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
@@ -50,5 +50,8 @@
   },
   "dependencies": {
     "core-js": "^3.16.2"
+  },
+  "volta": {
+    "node": "16.20.2"
   }
 }
